@@ -1,0 +1,19 @@
+server:
+  port: 9999
+
+logging:
+  level:
+    "root": info
+app:
+  # 存储转码视频的文件夹
+  video-folder: D:\Users\ffmpeg\video\
+
+#aws oos环境配置
+amazon:
+  aws:
+    access-key-id: AKIASXC2YHWPMDE54CMA
+    access-key-secret: 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
+  s3:
+    default-bucket: xiaogui001
+    region: ap-northeast-1
+    dirname: xxxx

@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "869fec22-9651-47e0-827f-d309f1583836",
+		"name": "m3u8-aws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "aws-upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Users/ffmpeg/214.mp4"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9999/storage/uploadFile",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"storage",
+						"uploadFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aws-convertFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "https://xiaogui001.s3.ap-northeast-1.amazonaws.com/xxxx/1676527155448-214.mp4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9999/storage/convertFile",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"storage",
+						"convertFile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
